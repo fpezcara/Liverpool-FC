@@ -1,0 +1,20 @@
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+table, th, tr, td{
+    border-collapse: collapse;
+    width: 70%;
+    border: 2px solid grey;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+.img {
+    width: 500px;
+    height: 300px;
+}
+
