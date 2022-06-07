@@ -1,12 +1,49 @@
-header {
-    font-family: Arial, Helvetica, sans-serif;
-    color: red;
+* {
+    box-sizing: border-box;
 }
 
-table, th, tr, td{
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: #DC0714;
+    color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#table-section {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table,
+th,
+tr,
+td {
     border-collapse: collapse;
-    width: 70%;
     border: 2px solid grey;
+}
+
+table {
+    width: 80vw;
+    height: 30vh;
+
+}
+
+td {
+    padding-left: 16px;
 }
 
 tr:nth-child(even) {
@@ -18,3 +55,28 @@ tr:nth-child(even) {
     height: 300px;
 }
 
+#players-section-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#players-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 260px;
+
+}
+
+#players-grid>img {
+    width: 300px;
+}
+
+footer {
+    background: #B71515;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
